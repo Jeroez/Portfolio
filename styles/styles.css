@@ -3,16 +3,16 @@ body, ul {
     padding: 0;
 }
 
-#welcome-section {
+#Home {
     height: 100vh; 
-    background-color: #3498db;
-    color: #fff;
+    background-color: #285FCC;
+    color: black;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-#welcome-section h1 {
+#Home {
     font-size: 2em;
 }
 
@@ -21,17 +21,25 @@ body, ul {
 }
 
 .project-tile {
-    background-color: #f2f2f2;
+    background-color: #3255a8;
     margin: 10px;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
 
+.pp{
+    max-width: 400px;
+    max-height: 400px;
+}
+.Main{
+    margin-left: 100px;
+}
+
 #navbar {
     width: 200px;
     height: 100%;
-    background-color: #333;
+    background-color: #6B3E99;
     position: fixed;
     top: 0;
     left: 0;
@@ -56,7 +64,7 @@ body, ul {
 }
 #navbar a {
     text-decoration: none;
-    color: #fff;
+    color: black;
     font-weight: bold;
 }
 
@@ -64,7 +72,7 @@ body, ul {
     display: block;
     text-align: center;
     background-color: #3498db;
-    color: #fff;
+    color: black;
     padding: 10px;
     margin: 20px auto;
     width: 150px;
@@ -77,9 +85,4 @@ body, ul {
         flex-direction: column;
         align-items: center;
     }
-}
-
-.pic{
-    max-width: 400px;
-    max-height: 400px;
 }
