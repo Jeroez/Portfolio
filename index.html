@@ -4,43 +4,88 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/styles.css">
+    <script src="./styles/style.js"></script>
     <title>My Portfolio</title>
 </head>
 <body>
-    <nav id="navbar">
+    <nav id="navigation">
         <ul>
-            <li><a href="#Home">Home</a></li><br>
-            <li><a href="#Introduction">About Me</a></li>
-            <li><a href="#Skills">My Skills</a></li>
-            <li><a href="#Education">My Education</a></li>
-            <li><a href="#projects">My Projects</a></li>
-            <li><a href="#Hub">My Github</a></li>
+            <li class="navi"><a href="#Introduction">About Me</a></li>
+            <li class="navi"><a href="#Skills">Skills</a></li>
+            <li class="navi"><a href="#Education">Education</a></li>
+            <li class="navi"><a href="#projects">My Projects</a></li>
+            <li class="navi"><a href="#Contact">Contact Information</a></li>
         </ul>
     </nav>
+    <nav id="navbar">
+        <ul>
+            <li class="home"><a href="#Home"><img class="logo" src="./img/Logo.png" alt="Home"></a></li><br>
+            <li class="nav"><a href="#Introduction">About Me</a></li><br>
+            <li class="nav"><a href="#Skills">Skills</a></li><br>
+            <li class="nav"><a href="#Education">Education</a></li><br>
+            <li class="nav"><a href="#projects">My Projects</a></li><br>
+            <li class="nav"><a href="#Contact">Contact Information</a></li>
+        </ul>
+    </nav>
+    
 
-    <section id="Home">
-        <img src="ProfilePic" alt="Profile Picture">
-        <h1>Welcome to My Portfolio</h1>
-    </section>
+    <div class="Main">
+        <section id="Home">
+            <img class="Homepic" src="./img/home.jpg" alt="home pic">
+            <h1 class="tit">Gomez Online Portfolio</h1>
+        </section>
 
-    <section id="Introduction">
-        <p></p>
-    </section>
+        <div class="cont">
+            <br><br>
+            <section id="Introduction">
+                <h3>&emsp;About Me</h3>
+                <p>Hello there! I'm Jeremiah Benjamin A. Gomez, an 18-year-old aspiring programmer originally from Muscat, Oman. Currently, I'm living in the vibrant PHIL. I am passionate about coding and technology, always eager to learn and explore new challenges in the world of programming.
+                </h3>
+                <!--<img class="pp" src="./img/ProfilePic.jpg" alt="Profile Picture">-->
 
-    <section id="Skills">
-         <!-- -->
-    </section>
+            </section>
 
-    <section id="Education">
-        <!-- -->
-   </section>
+            <section id="Skills">
+                <h3>&emsp;My Skills</h3>
+                <p>I am proficient in all programming languages, making me a versatile and adaptable developer. From front-end to back-end, I enjoy crafting elegant and efficient solutions to complex problems. My skills include but are not limited to:</h3>
+                <ul>
+                    <li>Python</li><br>
+                    <li>Java</li><br>
+                    <li>JavaScript</li><br>
+                    <li>HTML</li><br>
+                    <li>CSS</li><br>
+                    <li>SQL</li><br>
+                    <li>Ruby</li><br>
+                    <li>PHP</li><br>
+                    <li>C++</li><br>
+                </ul>
+                <p>These skills enable me to tackle a wide range of projects and contribute effectively to any development team.
+                </h3>
+            </section>
 
-   <section id="projects">
-    <!-- -->
-    </section>
+            <section id="Education">
+                <h3>&emsp;Education</h3>
+                <p>I believe in the power of continuous learning. Although my formal education journey is just beginning, I am committed to staying ahead in the tech world. Stay tuned for updates on my educational achievements!
+                </h3>
+            </section>
+            <section id="projects">
+                <h3>My Projects</h3>
+            </section>
 
-    <section id="Hub">
-        <a id="profile-link" href="https://github.com/Jeroez/CIT142H.git" target="_blank">My GitHub Profile</a>
-    </section>
+
+            <section id="Contact">
+                <h3>Contact Information</h3>
+                <p>Feel free to reach out to me through the following channels:</h3>
+                <ul>
+                    <li>Phone: </li>
+                    <li>Email: </li>
+                    <li>Facebook: </li>
+                </ul>
+                <p>And finally, check out my projects through my github profile</h3>
+                <a id="profile-link" href="https://github.com/Jeroez/CIT142H.git" target="_blank">My GitHub Profile</a>
+            </section>
+        
+        </div>
+    </div>
 </body>
 </html>

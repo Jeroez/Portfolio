@@ -3,42 +3,102 @@ body, ul {
     padding: 0;
 }
 
-#welcome-section {
-    height: 100vh; 
-    background-color: #3498db;
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#welcome-section h1 {
-    font-size: 2em;
-}
-
 #projects {
     padding: 20px;
 }
 
 .project-tile {
-    background-color: #f2f2f2;
+    background-color: #3255a8;
     margin: 10px;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
+#Home {
+    position: relative;
+}
+
+.tit {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 6vw;
+    text-align: center;
+    color: black;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.Homepic {
+    width: 100%;
+    max-height: 100vh;
+    object-fit: cover;
+    position: relative;
+    z-index: 0;
+    opacity: 0.6;
+}
+
+.pp{
+    max-width: 400px;
+    max-height: 400px;
+}
+
+.logo{
+    margin-top: -30px;
+    width: 100px;
+    max-height: 80px;
+}
+.Main{
+    background-color: #585858;
+}
+.cont{
+    padding-top: -10px;
+    padding-left: 230px;
+}
+
+#navigation{
+    height: 50px;
+    width: 100%;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    transition: 0.5s;
+}
+#navigation a{
+    margin-top: 20px;
+    color: wheat;
+    padding: 12px 110px;
+    text-decoration: none;
+    text-align: center;
+    align-items: center;
+}
+#navigation a:hover{
+    color: navy;
+}
+#navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    
+}
 
 #navbar {
-    width: 200px;
+    width: 130px;
     height: 100%;
-    background-color: #333;
+    background-color: black;
     position: fixed;
     top: 0;
     left: 0;
     transition: 0.5s;
     overflow-x: hidden;
-    padding: 30px 0px;
-    
+    padding: 50px 0px;
+    display: none;
+}
+.current{
+    background-color: #285FCC;
 }
 
 #navbar ul {
@@ -47,24 +107,26 @@ body, ul {
     justify-content: space-around;
     padding: 10px;
     display: block;
+
 }
 
-#navbar li {
-    padding: 60px 0px;
+.nav{
+    padding: 20px 0px;
     text-align: center;
-    
+    border: 2px solid black;
+    max-height: 20px;
 }
+
 #navbar a {
     text-decoration: none;
-    color: #fff;
+    color: b;
     font-weight: bold;
 }
-
 #profile-link {
     display: block;
     text-align: center;
     background-color: #3498db;
-    color: #fff;
+    color: black;
     padding: 10px;
     margin: 20px auto;
     width: 150px;
@@ -73,13 +135,8 @@ body, ul {
 }
 
 @media (max-width: 768px) {
-    #navbar ul {
+    #navbar2 ul {
         flex-direction: column;
         align-items: center;
     }
-}
-
-.pic{
-    max-width: 400px;
-    max-height: 400px;
 }
