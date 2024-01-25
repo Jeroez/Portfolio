@@ -85,6 +85,14 @@ body, ul {
     
 }
 
+.pp{
+    max-width: 400px;
+    max-height: 400px;
+}
+.Main{
+    margin-left: 100px;
+}
+
 #navbar {
     width: 130px;
     height: 100%;
