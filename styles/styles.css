@@ -1,3 +1,9 @@
+*{
+    font-family: 'Courier New', Courier, monospace;
+}
+.Main{
+    background-color: White;
+}
 body, ul {
     margin: 0;
     padding: 0;
@@ -19,7 +25,6 @@ body, ul {
 }
 
 .tit {
-    font-family: 'Courier New', Courier, monospace;
     font-size: 6vw;
     text-align: center;
     color: black;
@@ -49,9 +54,6 @@ body, ul {
     width: 100px;
     max-height: 80px;
 }
-.Main{
-    background-color: #585858;
-}
 .cont{
     padding-top: -10px;
     padding-left: 230px;
@@ -61,13 +63,11 @@ body, ul {
     height: 50px;
     width: 100%;
     background-color: black;
-    position: fixed;
-    top: 0;
     transition: 0.5s;
 }
 #navigation a{
     margin-top: 20px;
-    color: wheat;
+    color: white;
     padding: 12px 110px;
     text-decoration: none;
     text-align: center;
@@ -89,9 +89,7 @@ body, ul {
     max-width: 400px;
     max-height: 400px;
 }
-.Main{
-    margin-left: 100px;
-}
+
 
 #navbar {
     width: 130px;
@@ -127,7 +125,11 @@ body, ul {
 
 #navbar a {
     text-decoration: none;
-    color: b;
+    color: white;
+    font-weight: bold;
+}
+#navbar a:hover{
+    color: navy;
     font-weight: bold;
 }
 #profile-link {
@@ -140,6 +142,92 @@ body, ul {
     width: 150px;
     text-decoration: none;
     border-radius: 5px;
+}
+.Me{
+    height: 500px;
+    width: 320px;
+}
+
+.programminglogo{
+    height: 15px;
+    width:   15px;
+    
+}
+.intro{
+    display: inline-block;
+}
+.Hello{
+    width: 700px;
+    height: 500px;
+    padding-left: 400px;
+    margin-top: -400px;
+}
+.skilltxt{
+    width: 700px;
+    height: 500px;
+    padding-left: 400px;
+    margin-top: -200px;
+} 
+.skillLogos{
+    margin-left: 20px;
+    margin-top: 50px;
+    
+}
+
+.outer{
+    border: black;
+    background-color: grey;
+}
+
+.sub{
+    height: 40px;
+    width: 100%;
+    border: black;
+    background-color: grey;
+
+}
+.subt{
+    font-size: 30px;
+    text-align: center;
+    padding-left: 100px;
+}
+.card{
+    height: 400px;
+    width: 300px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border: black;
+    border-radius: 5px 5px 0 0;
+    
+}
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.inside{
+    margin: 20px; 
+    margin-top: -2px;
+    border-radius: 10px 10px 0 0;
+
+}
+.first{
+    background-color: red;
+}
+#projectbtn{
+    display: block;
+    text-align: center;
+    background-color: #3498db;
+    color: black;
+    padding: 10px;
+    margin: 20px auto;
+    width: 150px;
+    text-decoration: none;
+    border-radius: 5px;
+    bottom: 5px;
+}
+.projectpic{
+    margin: 5px;
+    height: 300px;
+    width: 100%;
 }
 
 @media (max-width: 768px) {

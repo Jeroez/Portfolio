@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
         var scrollPosition = window.scrollY;
         var homeSectionHeight = homeSection.offsetHeight;
 
-        if (scrollPosition < homeSectionHeight * 1.0) {
+        if (scrollPosition < homeSectionHeight * 0.9) {
             navigation.style.display = 'block';
         } else {
             navigation.style.display = 'none';
@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
         var scrollPosition = window.scrollY;
         var homeSectionHeight = homeSection.offsetHeight;
 
-        if (scrollPosition > homeSectionHeight * 1.0) {
+        if (scrollPosition > homeSectionHeight * 1) {
             navbar.style.display = 'block';
         } else {
             navbar.style.display = 'none';
