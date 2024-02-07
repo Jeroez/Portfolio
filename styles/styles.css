@@ -59,12 +59,30 @@ body, ul {
     padding-left: 230px;
 }
 
+
 #navigation{
     height: 50px;
     width: 100%;
     background-color: black;
-    transition: 0.5s;
+    position: fixed;
+    transition: 2s;
+    overflow-x: hidden;
+    display: none;
 }
+
+#navbar {
+    width: 130px;
+    height: 100%;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: width 2s linear 1s;
+    overflow-x: hidden;
+    padding: 50px 0px;
+    display: none;
+}
+
 #navigation a{
     margin-top: 20px;
     color: white;
@@ -72,6 +90,7 @@ body, ul {
     text-decoration: none;
     text-align: center;
     align-items: center;
+
 }
 #navigation a:hover{
     color: navy;
@@ -90,19 +109,6 @@ body, ul {
     max-height: 400px;
 }
 
-
-#navbar {
-    width: 130px;
-    height: 100%;
-    background-color: black;
-    position: fixed;
-    top: 0;
-    left: 0;
-    transition: 0.5s;
-    overflow-x: hidden;
-    padding: 50px 0px;
-    display: none;
-}
 .current{
     background-color: #285FCC;
 }
@@ -209,25 +215,46 @@ body, ul {
     border-radius: 10px 10px 0 0;
 
 }
+.schoolpic{
+    padding-top: 20px;
+    height: 60%;
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.SchoolName, .projectText{
+    text-align: center;
+    font-style: oblique;
+    
+}
+.ABC{
+    margin-left: 400px;
+    margin-top: -400px;
+}
+.UC{
+    margin-left: 800px;
+    margin-top: -400px;
+}
 .first{
-    background-color: red;
+    background-color: beige;
 }
 #projectbtn{
-    display: block;
+    margin-left: 30%;
     text-align: center;
     background-color: #3498db;
     color: black;
     padding: 10px;
-    margin: 20px auto;
     width: 150px;
     text-decoration: none;
-    border-radius: 5px;
-    bottom: 5px;
+    border-radius: 25px;
+    margin-bottom: 5px;
 }
-.projectpic{
-    margin: 5px;
-    height: 300px;
-    width: 100%;
+.kiana{
+    padding-top: 20px;
+    max-height: 60%;
+    max-width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 @media (max-width: 768px) {
@@ -236,3 +263,4 @@ body, ul {
         align-items: center;
     }
 }
+

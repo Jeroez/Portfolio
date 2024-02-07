@@ -6,10 +6,10 @@ document.addEventListener('DOMContentLoaded', function() {
         var scrollPosition = window.scrollY;
         var homeSectionHeight = homeSection.offsetHeight;
 
-        if (scrollPosition < homeSectionHeight * 0.9) {
-            navigation.style.display = 'block';
-        } else {
+        if (scrollPosition > homeSectionHeight * 1) {
             navigation.style.display = 'none';
+        } else {
+            navigation.style.display = 'block';
         }
     });
 });
