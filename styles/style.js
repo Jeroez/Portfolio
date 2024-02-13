@@ -1,20 +1,4 @@
 document.addEventListener('DOMContentLoaded', function() {
-    var navigation = document.getElementById('navigation'); 
-    var homeSection = document.getElementById('Home');
-
-    window.addEventListener('scroll', function() {
-        var scrollPosition = window.scrollY;
-        var homeSectionHeight = homeSection.offsetHeight;
-
-        if (scrollPosition > homeSectionHeight * 1) {
-            navigation.style.display = 'none';
-        } else {
-            navigation.style.display = 'block';
-        }
-    });
-});
-
-document.addEventListener('DOMContentLoaded', function() {
     var navbar= document.getElementById('navbar');
     var homeSection = document.getElementById('Home');
 

@@ -1,10 +1,23 @@
-
 /**/
+html{
+    scroll-behavior: smooth;
+}
+body {
+    width: 100vw;
+    height: 100vh; 
+    overflow: auto; 
+    -ms-overflow-style: none; 
+    scrollbar-width: none;
+}
+body::-webkit-scrollbar{
+    display: none;
+}
 *{
     font-family: 'Courier New', Courier, monospace;
 }
 .Main{
-    background-color: White;
+    background-color: beige;
+    margin-left: 10%;
 }
 body, ul {
     margin: 0;
@@ -25,25 +38,26 @@ body, ul {
 #Home {
     position: relative;
 }
-
-.tit {
-    font-size: 6vw;
-    text-align: center;
-    color: black;
-    position: absolute;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 1;
+#Entrance{
 }
 
 .Homepic {
     width: 100%;
-    max-height: 100vh;
-    object-fit: cover;
-    position: relative;
-    z-index: 0;
-    opacity: 0.6;
+}
+.door{
+    position: absolute;
+    margin-left: 48.5%;
+    margin-top: 10%;
+    height: 59%;
+}
+.door:hover{
+    height: 70%;
+    margin-top: 7%;
+    margin-left: 47.5%;
+}
+.ent{
+    width: 100%;
+    margin-top: -1%;
 }
 
 .pp{
@@ -62,18 +76,8 @@ body, ul {
 }
 
 
-#navigation{
-    height: 50px;
-    width: 100%;
-    background-color: black;
-    position: fixed;
-    transition: 2s;
-    overflow-x: hidden;
-    display: none;
-}
-
 #navbar {
-    width: 130px;
+    width: 10%;
     height: 100%;
     background-color: black;
     position: fixed;
@@ -83,27 +87,6 @@ body, ul {
     overflow-x: hidden;
     padding: 50px 0px;
     display: none;
-}
-
-#navigation a{
-    margin-top: 20px;
-    color: white;
-    padding: 12px 110px;
-    text-decoration: none;
-    text-align: center;
-    align-items: center;
-
-}
-#navigation a:hover{
-    color: navy;
-}
-#navigation ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    display: flex;
-    
 }
 
 .pp{
@@ -152,8 +135,10 @@ body, ul {
     border-radius: 5px;
 }
 .Me{
-    height: 500px;
-    width: 320px;
+    height: 10%;
+    width: 25%;
+    margin-left: -10%;
+    margin-top: -10%;
 }
 
 .programminglogo{
@@ -167,8 +152,38 @@ body, ul {
 .Hello{
     width: 700px;
     height: 500px;
-    padding-left: 400px;
-    margin-top: -400px;
+    padding-left: 30%;
+    margin-top: -15%;
+}
+
+.AboutEnt{
+    position: absolute;
+    margin-left: 13.7%;
+    margin-top: 12.1%;
+    width: 17.35%;
+}
+.AboutEnt:hover{
+    margin-left: 12.7%;
+    margin-top: 11.1;
+    width: 20%;
+}
+.endoor{
+    position: absolute;
+    margin-left: 42%;
+    margin-top: 14.6%;
+    width: 9.4%;
+}
+.endoor:hover{
+    margin-left: 41%;
+    margin-top: 13.6%;
+    width: 12%;
+}
+
+.aboutBG{
+    width: 120%;
+    position: relative;
+    margin-left: -20.5%;
+    margin-top: -60%;
 }
 .skilltxt{
     width: 700px;
@@ -189,22 +204,30 @@ body, ul {
 
 .sub{
     height: 40px;
-    width: 100%;
+    width: 20%;
     border: black;
     background-color: grey;
-
+    rotate: 90deg;
+    margin-left: -25%;
+    margin-top: 10%;
+    position: relative;
 }
 .subt{
     font-size: 30px;
+    rotate: -90deg;
+    margin-top: -20%;
+    rotate: 180deg;
     text-align: center;
-    padding-left: 100px;
+}
+.ski{
+    margin-top: 20%;
 }
 .card{
     height: 400px;
     width: 300px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
-    border: black;
+    border: 1px solid black;
     border-radius: 5px 5px 0 0;
     
 }
@@ -215,7 +238,7 @@ body, ul {
     margin: 20px; 
     margin-top: -2px;
     border-radius: 10px 10px 0 0;
-
+    background-color: beige;
 }
 .schoolpic{
     padding-top: 20px;
@@ -238,7 +261,18 @@ body, ul {
     margin-top: -400px;
 }
 .first{
-    background-color: beige;
+    margin-left: 320px;
+
+}
+.second{
+    margin-left: 640px;
+    margin-top: -800px;
+}
+.third{
+
+}
+.fourth{
+
 }
 #projectbtn{
     margin-left: 30%;
@@ -258,7 +292,34 @@ body, ul {
     padding-left: 5%;
     padding-right: 5%;
 }
-
+.Mei{
+    padding-top: 20px;
+    max-height: 60%;
+    max-width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.Bronya{
+    padding-top: 20px;
+    max-height: 60%;
+    max-width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.Hua{
+    padding-top: 20px;
+    max-height: 60%;
+    max-width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.Durandal{
+    padding-top: 20px;
+    max-height: 60%;
+    max-width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
 @media (max-width: 768px) {
     #navbar2 ul {
         flex-direction: column;
