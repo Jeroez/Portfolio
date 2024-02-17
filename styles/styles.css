@@ -140,12 +140,6 @@ body, ul {
     margin-left: -10%;
     margin-top: -10%;
 }
-
-.programminglogo{
-    height: 15px;
-    width:   15px;
-    
-}
 .intro{
     display: inline-block;
 }
@@ -178,10 +172,31 @@ body, ul {
     margin-top: 13.6%;
     width: 12%;
 }
+.Stairs{
+    position: absolute;
+    margin-left: 53.6%;
+    margin-top: 0.7%;
+    width: 26.3%;
+}
+.Stairs:hover{
+    margin-left: 52.6%;
+    margin-top: -0.7%;
+    width: 30%;
+}
+.Wardrobe{
+    position: absolute;
+    margin-left: 85%;
+    margin-top: 8%;
+    height: 77%;
+}
+.Wardrobe:hover{
+    margin-left: 85%;
+    margin-top: 7%;
+    height: 90%;
+}
 
 .aboutBG{
     width: 120%;
-    position: relative;
     margin-left: -20.5%;
     margin-top: -60%;
 }
@@ -191,10 +206,52 @@ body, ul {
     padding-left: 400px;
     margin-top: -200px;
 } 
-.skillLogos{
-    margin-left: 20px;
-    margin-top: 50px;
+.skillLogos {
+    margin-top: -15%;
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    position: absolute;
     
+}
+.skillLogos button {
+    border: none;
+    background: none;
+    padding: 3%;
+    cursor: pointer; 
+}
+
+.skillLogos li {
+    text-align: center;
+}
+
+.skillLogos li img {
+    height: 20%;
+    width: 20%;
+}
+
+
+.popup{
+    display: none; 
+    position: fixed; 
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    background-color: #1e1e1e; 
+    padding: 20px; 
+    border: 2px solid black;
+    z-index: 999; 
+    height: 60%;
+    width: 40%;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+}
+pre code {
+    background-color: transparent !important;
+    font-size: 200%;
+    white-space: pre-line;
+    overflow: hidden;
 }
 
 .outer{
@@ -227,16 +284,16 @@ body, ul {
     width: 300px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
-    border: 1px solid black;
+    border: 2px solid black;
     border-radius: 5px 5px 0 0;
-    
 }
 .card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 16px 32px 0 rgba(0,0,0,0.2);
 }
+
 .inside{
     margin: 20px; 
-    margin-top: -2px;
+    margin-top: 2%;
     border-radius: 10px 10px 0 0;
     background-color: beige;
 }
@@ -252,6 +309,10 @@ body, ul {
     font-style: oblique;
     
 }
+.projectText{
+    margin-top: -0.5%;
+    margin-bottom: -0.5%;
+}
 .ABC{
     margin-left: 400px;
     margin-top: -400px;
@@ -261,18 +322,23 @@ body, ul {
     margin-top: -400px;
 }
 .first{
-    margin-left: 320px;
-
+    margin-top: -10%;
 }
 .second{
-    margin-left: 640px;
-    margin-top: -800px;
+    margin-left: 30%;
+    margin-top: -33%;
 }
 .third{
+    margin-left: 60%;
+    margin-top: -33%;
 
 }
 .fourth{
-
+    margin-top: 4%;
+}
+.fifth{
+    margin-left: 30%;
+    margin-top: -33%;
 }
 #projectbtn{
     margin-left: 30%;
@@ -285,41 +351,11 @@ body, ul {
     border-radius: 25px;
     margin-bottom: 5px;
 }
-.kiana{
-    padding-top: 20px;
-    max-height: 60%;
-    max-width: 90%;
-    padding-left: 5%;
-    padding-right: 5%;
+.project{
+    border-radius: 25px;
+    width: 100%;
 }
-.Mei{
-    padding-top: 20px;
-    max-height: 60%;
-    max-width: 90%;
-    padding-left: 5%;
-    padding-right: 5%;
-}
-.Bronya{
-    padding-top: 20px;
-    max-height: 60%;
-    max-width: 90%;
-    padding-left: 5%;
-    padding-right: 5%;
-}
-.Hua{
-    padding-top: 20px;
-    max-height: 60%;
-    max-width: 90%;
-    padding-left: 5%;
-    padding-right: 5%;
-}
-.Durandal{
-    padding-top: 20px;
-    max-height: 60%;
-    max-width: 90%;
-    padding-left: 5%;
-    padding-right: 5%;
-}
+
 @media (max-width: 768px) {
     #navbar2 ul {
         flex-direction: column;

@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/styles.css">
     <script src="./styles/style.js"></script>
+    <script src="./styles/popup.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+
     <title>My Portfolio</title>
 </head>
 <body>
@@ -36,6 +41,12 @@
             <a href="#Education">
                 <img class="endoor" src="./img/entranceDoor1.png" alt="">
             </a>
+            <a href="">
+                <img class="Stairs" src="./img/Stairs.png" alt="">
+            </a>
+            <a href="">
+                <img class="Wardrobe" src="./img/wardrobe.png" alt="">
+            </a>
 
             <!--^TP parts above here^-->
             <img class="ent" src="./img/entrance.png" alt="">     
@@ -58,20 +69,116 @@
 
             <section id="Skills">
                 <div class="sub ski"><h3 class="subt">My Skills</h3></div>
+                <h3 class="skilltxt">I have some knowledge in all programming languages, making me a versatile and adaptable developer. From front-end to back-end, I enjoy crafting elegant and efficient solutions to complex problems. The Following are skills i am currently knowledgable on. These skills enable me to tackle a wide range of projects and contribute effectively to any development team.</h3>
                 <ul class="skillLogos">
-                    <li><img class="programminglogo" src="./img/Python.png" alt="Python">&emsp;Python</li><br>
-                    <li><img class="programminglogo" src="./img/Java.png" alt="Java">&emsp;Java</li><br>
-                    <li><img class="programminglogo" src="./img/JS.png" alt="JavaScript">&emsp;JavaScript</li><br>
-                    <li><img class="programminglogo" src="./img/html.png" alt="html">&emsp;HTML</li><br>
-                    <li><img class="programminglogo" src="./img/Css.png" alt="css">&emsp;CSS</li><br>
-                    <li><img class="programminglogo" src="./img/SQL.png" alt="SQL">&emsp;SQL</li><br>
-                    <li><img class="programminglogo" src="./img/Ruby.png" alt="Ruby">&emsp;Ruby</li><br>
-                    <li><img class="programminglogo" src="./img/PHP.png" alt="PHP">&emsp;PHP</li><br>
-                    <li><img class="programminglogo" src="./img/C++.png" alt="C++">&emsp;C++</li><br>
+                    <li><button onclick="openPopup(1)"><img class="programminglogo" src="./img/Python.png" alt="Python"></button></li>
+                    <li><button onclick="openPopup(2)"><img class="programminglogo" src="./img/Java.png" alt="Java"></button></li>
+                    <li><button onclick="openPopup(3)"><img class="programminglogo" src="./img/JS.png" alt="JavaScript"></button></li>
+                    <li><button onclick="openPopup(4)"><img class="programminglogo" src="./img/html.png" alt="HTML"></button></li>
+                    <li><button onclick="openPopup(5)"><img class="programminglogo" src="./img/Css.png" alt="CSS"></button></li>
+                    <li><button onclick="openPopup(6)"><img class="programminglogo" src="./img/SQL.png" alt="SQL"></button></li>
+                    <li><button onclick="openPopup(7)"><img class="programminglogo" src="./img/Ruby.png" alt="Ruby"></button></li>
+                    <li><button onclick="openPopup(8)"><img class="programminglogo" src="./img/PHP.png" alt="PHP"></button></li>
+                    <li><button onclick="openPopup(9)"><img class="programminglogo" src="./img/C++.png" alt="C++"></button></li>
                 </ul>
-                <h3 class="skilltxt">I am proficient in all programming languages, making me a versatile and adaptable developer. From front-end to back-end, I enjoy crafting elegant and efficient solutions to complex problems. The Following are skills i am currently knowledgable on. These skills enable me to tackle a wide range of projects and contribute effectively to any development team.</h3>
-            </section>
+                
+                <div id="popup1" class="popup">
+                    <button onclick="closePopup(1)">Close</button>
+                    <h2>Python:</h2>
+                    <pre><code class="python">print("Hello, World!")</code></pre>
 
+                </div>
+                
+                <div id="popup2" class="popup">
+                    <button onclick="closePopup(2)">Close</button>
+                    <h2>Java:</h2>
+                    <pre><code class="java">
+                    // Java Hello World Program
+                    public class HelloWorld {
+                        public static void main(String[] args) {
+                            System.out.println("Hello, World!");
+                        }
+                    }</code></pre>
+                </div>
+                
+                <div id="popup3" class="popup">
+                    <button onclick="closePopup(3)">Close</button>
+                    <h2>JavaScript:</h2>
+                    <pre><code class="javascript">
+                    // JavaScript Hello World Program
+                    console.log("Hello, World!");</code></pre>
+                </div>
+                
+                <div id="popup4" class="popup">
+                    <button onclick="closePopup(4)">Close</button>
+                    <h2>HTML:</h2>
+                    <pre><code class="html">&lt;
+                    !-- HTML Hello World Program --&gt;
+                    &lt;!DOCTYPE html&gt;
+                    &lt;html&gt;
+                    &lt;head&gt;
+                        &lt;title&gt;Hello World&lt;/title&gt;
+                    &lt;/head&gt;
+                    &lt;body&gt;
+                        &lt;h1&gt;Hello, World!&lt;/h1&gt;
+                    &lt;/body&gt;
+                    &lt;/html&gt;</code></pre>
+                </div>
+                
+                <div id="popup5" class="popup">
+                    <button onclick="closePopup(5)">Close</button>
+                    <h2>CSS:</h2>
+                    <pre><code class="css">
+                    /* CSS Hello World Program */
+                    /* No actual "Hello World" output, just styling for html since thats all css is used for lol */
+                    h1 {
+                        color: blue;
+                    }</code></pre>
+                </div>
+                
+                <div id="popup6" class="popup">
+                    <button onclick="closePopup(6)">Close</button>
+                    <h2>SQL:</h2>
+                    <pre><code class="sql">
+                    -- SQL Hello World Program
+                    SELECT 'Hello, World!' AS greeting;</code></pre>
+                </div>
+                
+                <div id="popup7" class="popup">
+                    <button onclick="closePopup(7)">Close</button>
+                    <h2>Ruby:</h2>
+                    <pre><code class="ruby">
+                    # Ruby Hello World Program
+                    puts "Hello, World!"</code></pre>
+                </div>
+                
+                <div id="popup8" class="popup">
+                    <button onclick="closePopup(8)">Close</button>
+                    <h2>PHP:</h2>
+                    <pre><code class="php">
+                    &lt;?php
+                    // PHP Hello World Program
+                    echo "Hello, World!";
+                    ?&gt;</code></pre>
+                </div>
+                
+                <div id="popup9" class="popup">
+                    <button onclick="closePopup(9)">Close</button>
+                    <h2>C++:</h2>
+                    <pre><code class="cpp">
+                    // C++ Hello World Program
+                    #include &lt;iostream&gt;
+                    using namespace std;
+                    
+                    int main() {
+                        cout &lt;&lt; "Hello, World!" &lt;&lt; endl;
+                        return 0;
+                    }</code></pre>
+                </div>
+                
+                
+            </section>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
             <section id="Education">
                 <div class="sub"><h3 class="subt">Education</h3></div>
                 <h3 class="educationtxt">I believe in the power of continuous learning. Although my formal education journey is just beginning, I am committed to staying ahead in the tech world. Stay tuned for updates on my educational achievements!</h3>
@@ -85,57 +192,58 @@
                 <div class="ABC card">
                     <section class="inside">
                         <img class="schoolpic" src="./img/pabcf LOGO.jpg" alt="pabcf">
-                       <p class="SchoolName"><b>SriLankan School Muscat</b></p>
+                       <p class="SchoolName"><b>PABCF</b></p>
                     </section>
                 </div>
                 <div class="UC card">
                     <section class="inside">
                         <img class="schoolpic" src="./img/UC Logo.jpg" alt="uc">
-                       <p class="SchoolName"><b>Sri Lankan School Muscat</b></p>
+                       <p class="SchoolName"><b>University of the Cordilleras</b></p>
                     </section>
                 </div>
 
                 <!--Continue HERE-->
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
             </section>
             <section id="projects">
                 <div class="sub"><h3 class="subt">My Projects</h3></div><br>
                 
-                <div class="card"><br>
-                    <section class="inside first">
-                        <img class="kiana" src="./img/ProjectKiana.jpg" alt="project1">
+                <div class="card first">
+                    <section class="inside">
+                        <img class="project kiana" src="./img/ProjectKiana.jpg" alt="project1">
                         <p class="projectText"><b>Kiana Kaslana</b></p>
                     </section>
                     <a id="projectbtn" href="https://jeroez.github.io/KianaKaslana/" >Visit Page</a>
                 </div>
 
-                <div class="card first"><br>
+                <div class="card second">
                     <section class="inside">
-                        <img class="Mei" src="" alt="project1">
+                        <img class="project Mei" src="./img/ProjectMei.png" alt="project1">
                         <p class="projectText"><b>Raiden Mei</b></p>
                     </section>
-                    <a id="projectbtn" href="https://jeroez.github.io/RaidenMei         /" >Visit Page</a>
+                    <a id="projectbtn" href="https://jeroez.github.io/RaidenMei/" >Visit Page</a>
                 </div>
 
-                <div class="card second"><br>
+                <div class="card third">
                     <section class="inside">
-                        <img class="Bronya" src="" alt="project1">
+                        <img class="project Bronya" src="./img/ProjectBronya.jpg" alt="project1">
                         <p class="projectText"><b>Bronya Zaychik</b></p>
                     </section>
                     <a id="projectbtn" href="https://jeroez.github.io/BronyaZaychik/" >Visit Page</a>
                 </div>
 
-                <div class="card third"><br>
+                <div class="card fourth">
                     <section class="inside">
-                        <img class="Hua" src="" alt="project1">
+                        <img class="project Hua" src="./img/ProjectHua.jpg" alt="project1">
                         <p class="projectText"><b>Fu Hua</b></p>
                     </section>
                     <a id="projectbtn" href="https://jeroez.github.io/FuHua/" >Visit Page</a>
                 </div>
 
-                <div class="card fourth"><br>
+                <div class="card fifth">
                     <section class="inside">
-                        <img class="Durandal" src="" alt="project1">
+                        <img class="project Durandal" src="./img/ProjectBianka.jpg" alt="project1">
                         <p class="projectText"><b>Durandal</b></p>
                     </section>
                     <a id="projectbtn" href="https://jeroez.github.io/Durandal/" >Visit Page</a>
