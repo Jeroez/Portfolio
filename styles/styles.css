@@ -203,11 +203,12 @@ body, ul {
 .skilltxt{
     width: 700px;
     height: 500px;
-    padding-left: 400px;
+    padding-left: 200px;
     margin-top: -200px;
 } 
 .skillLogos {
     margin-top: -15%;
+    margin-left: -100px;
     list-style-type: none;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
